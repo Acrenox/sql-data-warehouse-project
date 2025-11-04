@@ -13,7 +13,9 @@ Usage:
     - These views can be queried directly for analytics and reporting.
 ===============================================================================
 */
-
+-- =============================================================================
+-- Create Dimension: gold.dim_products
+-- =============================================================================
 CREATE OR REPLACE VIEW gold.dim_products AS
 SELECT
 	ROW_NUMBER() OVER (ORDER BY pn.prd_start_dt, pn.prd_key) AS product_key,
@@ -57,3 +59,4 @@ WHERE prd_end_dt IS NULL)t
 GROUP BY prd_key
 
 HAVING COUNT(*)>1;
+
