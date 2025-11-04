@@ -1,6 +1,10 @@
 select * from bronze.erp_loc_a101;
 select * from silver.erp_loc_a101;
 
+
+------------------------------------------------------------------------------------------------
+--Updated silver.erp_cust_az12 with the transformations (Not to be run without the Pipeline):---
+------------------------------------------------------------------------------------------------
 INSERT INTO silver.erp_loc_a101(cid, cntry)
 SELECT
 REPLACE(TRIM(cid),'-','') AS cid,
@@ -65,3 +69,4 @@ SELECT a.cid
 FROM silver.erp_loc_a101 a
 LEFT JOIN silver.erp_cust_az12 b ON a.cid = b.cid
 WHERE b.cid IS NULL;
+
