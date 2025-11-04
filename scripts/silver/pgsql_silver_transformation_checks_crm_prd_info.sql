@@ -1,6 +1,6 @@
-------------------------------------------------------------------------------------------------
---Updated silver.erp_cust_az12 with the transformations (Not to be run without the Pipeline):---
-------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+--UPDATED silver.crm_prd_info WITH THE TRANSFORMATIONS (Not to be run without the Pipeline):---
+----------------------------------------------------------------------------------------------------
 INSERT INTO silver.crm_prd_info(
         prd_id,
         cat_id,
@@ -86,6 +86,7 @@ WHERE EXISTS (
       AND s2.prd_start_dt < s1.prd_end_dt
       AND s1.ctid <> s2.ctid
 );
+
 
 
 
