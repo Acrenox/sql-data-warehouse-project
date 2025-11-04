@@ -13,11 +13,9 @@ Usage:
     - These views can be queried directly for analytics and reporting.
 ===============================================================================
 */
-
 -- =============================================================================
 -- Create Dimension: gold.dim_customers
 -- =============================================================================
-
 
 --dim_customer_table
 CREATE OR REPLACE VIEW gold.dim_customers AS 
@@ -77,5 +75,6 @@ ON ci.cst_key=ca.cid
 LEFT JOIN silver.erp_loc_a101 la
 ON ci.cst_key=la.cid
 ORDER BY 1, 2;
+
 
 
