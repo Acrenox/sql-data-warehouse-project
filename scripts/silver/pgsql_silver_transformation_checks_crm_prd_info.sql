@@ -86,7 +86,3 @@ WHERE EXISTS (
       AND s2.prd_start_dt < s1.prd_end_dt
       AND s1.ctid <> s2.ctid
 );
-
-
-
-
