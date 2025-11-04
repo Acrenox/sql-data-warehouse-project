@@ -1,5 +1,5 @@
 ------------------------------------------------------------------------------------------------
---Updated silver.erp_px_cat_g1v2 with the transformations (Not to be run without the Pipeline):---
+--UPDATED silver.erp_px_cat_g1v2 WITH THE TRANSFORMATIONS (Not to be run without the Pipeline):---
 ------------------------------------------------------------------------------------------------
 INSERT INTO silver.erp_px_cat_g1v2(id, cat, subcat, maintenance)
 SELECT
@@ -57,3 +57,4 @@ FROM silver.erp_px_cat_g1v2
 GROUP BY cat
 HAVING COUNT(DISTINCT subcat) > 1;
 🟢 Purpose: Detects logical inconsistencies between category and subcategory mappings.
+
