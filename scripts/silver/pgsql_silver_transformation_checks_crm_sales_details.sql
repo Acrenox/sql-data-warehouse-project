@@ -1,4 +1,52 @@
 
+------------------------------------------------------------------------------------------------
+--UPDATED silver.crm_sales_details WITH THE TRANSFORMATIONS (Not to be run without the Pipeline):---
+------------------------------------------------------------------------------------------------
+INSERT INTO silver.crm_sales_details(
+        sls_ord_num,
+        sls_prd_key,
+        sls_cust_id,
+        sls_order_dt,
+        sls_ship_dt,
+        sls_due_dt,
+        sls_sales,
+        sls_quantity,
+        sls_price
+    )
+    SELECT
+        sls_ord_num,
+        sls_prd_key,
+        sls_cust_id,
+        CASE
+            WHEN sls_order_dt IS NULL THEN NULL
+            WHEN sls_order_dt::numeric <= 0 OR char_length(sls_order_dt::text) <> 8 THEN NULL
+            ELSE to_date(sls_order_dt::text, 'YYYYMMDD')
+        END AS sls_order_dt,
+        CASE
+            WHEN sls_ship_dt IS NULL THEN NULL
+            WHEN sls_ship_dt::numeric <= 0 OR char_length(sls_ship_dt::text) <> 8 THEN NULL
+            ELSE to_date(sls_ship_dt::text, 'YYYYMMDD')
+        END AS sls_ship_dt,
+        CASE
+            WHEN sls_due_dt IS NULL THEN NULL
+            WHEN sls_due_dt::numeric <= 0 OR char_length(sls_due_dt::text) <> 8 THEN NULL
+            ELSE to_date(sls_due_dt::text, 'YYYYMMDD')
+        END AS sls_due_dt,
+        -- sls_sales
+        CASE
+            WHEN sls_sales IS NULL OR sls_sales <= 0 OR sls_sales <> sls_quantity * ABS(sls_price)
+                THEN sls_quantity * sls_price
+            ELSE sls_sales
+        END AS sls_sales,
+        -- sls_quantity
+        sls_quantity,
+        -- sls_price
+        CASE
+            WHEN sls_price IS NULL OR sls_price <= 0
+                THEN (sls_sales / NULLIF(sls_quantity, 0))
+            ELSE ABS(sls_price)
+        END AS sls_price
+    FROM bronze.crm_sales_details;
 
 ------------------------------------------------------------------------------------------------
 --CHECKS STARTS HERE--
@@ -63,3 +111,4 @@ WHERE sls_cust_id NOT IN (
     SELECT DISTINCT cst_id FROM silver.crm_cust_info
 );
 --🟢 Purpose: Ensures referential and logical consistency across the data model.
+
