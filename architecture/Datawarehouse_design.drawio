@@ -1,0 +1,103 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36" version="28.2.8">
+  <diagram name="Page-1" id="j8AMjfREvzjFwHamJG0z">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="hcuNt5OzdPjjIQKgLa3I-1" value="Bronze Layer" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="120" y="40" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="hcuNt5OzdPjjIQKgLa3I-2" value="Silver Layer" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="400" y="40" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="hcuNt5OzdPjjIQKgLa3I-3" value="Gold&amp;nbsp;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Layer&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="640" y="40" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="hcuNt5OzdPjjIQKgLa3I-4" value="Definition" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-220" y="120" width="220" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="hcuNt5OzdPjjIQKgLa3I-5" value="Objective" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-220" y="200" width="220" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="hcuNt5OzdPjjIQKgLa3I-6" value="Row, unprocessed data as-is from sources" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="80" y="120" width="280" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="hcuNt5OzdPjjIQKgLa3I-7" value="Traceability &amp;amp; Debugging" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="80" y="200" width="280" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="hcuNt5OzdPjjIQKgLa3I-8" value="Clean &amp;amp; standardize data" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="360" y="120" width="240" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="hcuNt5OzdPjjIQKgLa3I-10" value="(Intermediate Layer)&lt;div&gt;Prepare Data for Analysis&amp;nbsp;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="360" y="200" width="240" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="hcuNt5OzdPjjIQKgLa3I-11" value="Business ready data" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="600" y="120" width="230" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="hcuNt5OzdPjjIQKgLa3I-12" value="Provide data to be consumed for reporting and analytics" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="600" y="200" width="230" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="hcuNt5OzdPjjIQKgLa3I-13" value="Objective Type" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-220" y="280" width="220" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="hcuNt5OzdPjjIQKgLa3I-14" value="Tables" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="80" y="280" width="280" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="hcuNt5OzdPjjIQKgLa3I-15" value="Load Method" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-220" y="360" width="220" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="hcuNt5OzdPjjIQKgLa3I-16" value="Full Load&lt;div&gt;(Truncate &amp;amp; Insert)&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="80" y="360" width="280" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="hcuNt5OzdPjjIQKgLa3I-17" value="Tables" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="360" y="280" width="240" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="hcuNt5OzdPjjIQKgLa3I-18" value="Full Load&lt;div&gt;(Truncate &amp;amp; Insert)&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="360" y="360" width="240" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="hcuNt5OzdPjjIQKgLa3I-19" value="Views" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="600" y="280" width="230" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="hcuNt5OzdPjjIQKgLa3I-20" value="None" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="600" y="360" width="230" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="hcuNt5OzdPjjIQKgLa3I-21" value="Transformation" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-220" y="440" width="220" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="hcuNt5OzdPjjIQKgLa3I-23" value="- Data Cleaning&lt;div&gt;- Data Standardization&lt;/div&gt;&lt;div&gt;- Data Normalization&lt;/div&gt;&lt;div&gt;- Derived Columns&lt;/div&gt;&lt;div&gt;- Data Enrichment&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="360" y="440" width="240" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="hcuNt5OzdPjjIQKgLa3I-25" value="None&lt;div&gt;(as-is)&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="80" y="440" width="280" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="hcuNt5OzdPjjIQKgLa3I-26" value="- Data Integration&lt;div&gt;- Data Aggregation&lt;/div&gt;&lt;div&gt;- Business Logic &amp;amp; rules&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="600" y="440" width="230" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="hcuNt5OzdPjjIQKgLa3I-27" value="Data Modeling" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-215" y="640" width="210" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="hcuNt5OzdPjjIQKgLa3I-28" value="None&lt;div&gt;(as-is)&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="80" y="640" width="280" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="hcuNt5OzdPjjIQKgLa3I-29" value="None&lt;div&gt;(as-is)&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="360" y="640" width="240" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="hcuNt5OzdPjjIQKgLa3I-30" value="- Start Schema&lt;div&gt;- Aggregated Objects&lt;/div&gt;&lt;div&gt;- Flat Tables&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="600" y="640" width="230" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="hcuNt5OzdPjjIQKgLa3I-31" value="Load Method" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-215" y="800" width="215" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="hcuNt5OzdPjjIQKgLa3I-32" value="- Data Engineers" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="80" y="800" width="280" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="hcuNt5OzdPjjIQKgLa3I-33" value="- Data Analysts&lt;div&gt;- Data Engineers&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="360" y="800" width="240" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="hcuNt5OzdPjjIQKgLa3I-34" value="- Data Analysts&lt;div&gt;- Data Engineers&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="600" y="800" width="230" height="80" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
