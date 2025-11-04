@@ -28,9 +28,6 @@ INSERT INTO silver.crm_prd_info(
         (LEAD(prd_start_dt) OVER (PARTITION BY prd_key ORDER BY prd_start_dt)::date - INTERVAL '1 day')::date
             AS prd_end_dt
     FROM bronze.crm_prd_info;
-
-
-
 ------------------------------------------------------------------------------------------------
 --CHECKS STARTS HERE--
 ------------------------------------------------------------------------------------------------
@@ -86,3 +83,4 @@ WHERE EXISTS (
       AND s2.prd_start_dt < s1.prd_end_dt
       AND s1.ctid <> s2.ctid
 );
+
