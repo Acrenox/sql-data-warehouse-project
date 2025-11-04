@@ -13,7 +13,9 @@ Usage:
     - These views can be queried directly for analytics and reporting.
 ===============================================================================
 */
-
+-- =============================================================================
+-- Create Fact Table: gold.fact_sales
+-- =============================================================================
 CREATE OR REPLACE VIEW gold.fact_sales AS
 SELECT
 sd.sls_ord_num AS order_number,
@@ -41,3 +43,4 @@ LEFT JOIN gold.dim_products p
 ON p.product_key=f.product_key
 
 WHERE c.customer_key IS NULL;
+
