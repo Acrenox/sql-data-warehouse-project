@@ -15,6 +15,9 @@ CASE WHEN TRIM(cntry)='DE' THEN 'Germany'
 END cntry
 from bronze.erp_loc_a101;
 
+------------------------------------------------------------------------------------------------
+--CHECKS STARTS HERE--
+------------------------------------------------------------------------------------------------
 
 -- Bronze: Check for NULL or duplicate CIDs
 SELECT cid, COUNT(*) AS duplicate_count
@@ -69,4 +72,5 @@ SELECT a.cid
 FROM silver.erp_loc_a101 a
 LEFT JOIN silver.erp_cust_az12 b ON a.cid = b.cid
 WHERE b.cid IS NULL;
+
 
