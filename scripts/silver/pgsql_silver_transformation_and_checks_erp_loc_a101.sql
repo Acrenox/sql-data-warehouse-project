@@ -68,7 +68,3 @@ SELECT a.cid
 FROM silver.erp_loc_a101 a
 LEFT JOIN silver.erp_cust_az12 b ON a.cid = b.cid
 WHERE b.cid IS NULL;
-
-
-
-
