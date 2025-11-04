@@ -1,6 +1,3 @@
-SELECT * FROM bronze.crm_cust_info;
-
-
 /*
 ===============================================================================
 DDL Script: Create Silver Tables
@@ -79,4 +76,5 @@ CREATE TABLE silver.erp_px_cat_g1v2 (
     subcat          VARCHAR(50),
     maintenance     VARCHAR(50),
     dwh_create_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+
 );
